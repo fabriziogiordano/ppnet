@@ -1,130 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Animated Responsive Image Grid</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Animated Responsive Image Grid - Cycling through a set of images in a responsive grid." />
-        <meta name="keywords" content="grid, images, thumbnails, responsive, css3, jquery, javascript, random, transition, 3d, perspective" />
-        <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
-		<script type="text/javascript">
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Animated Responsive Image Grid</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/mod.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<section class="main">
+		<div id="ri-grid" class="ri-grid ri-grid-size-3">
+			<img class="ri-loading-image" src="images/loading.gif"/>
+			<ul>
+				<li><a href="#"><img src="assets/100x100/01.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/02.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/03.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/04.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/05.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/06.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/07.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/08.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/09.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/10.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/11.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/12.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/13.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/14.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/15.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/16.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/17.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/18.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/19.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/20.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/21.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/05.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/06.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/07.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/08.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/09.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/10.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/11.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/12.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/13.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/14.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/15.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/16.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/17.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/18.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/19.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/20.jpg"/></a></li>
+				<li><a href="#"><img src="assets/100x100/21.jpg"/></a></li>
+			</ul>
+		</div>
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-7243260-2']);
-		  _gaq.push(['_trackPageview']);
+		<header class="codrops-header-special">
+			<h1>SHOOT, SCORE <br>& MUCH MORE!</br></h1>
+			<br>
+			<h2>Get 100's of addicting games for your phone for $9.99/mo.</h2>
+			<nav class="button">
+				<img src="assets/pp-button-play.png" alt="Play Now">
+			</nav>
+			<p class="codrops-info"><strong>Already Subscribed?</strong> <br> Terms & Conditions</br></p>
+		</header>
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+	</section>
+</div>
 
-		</script>
-    </head>
-    <body>
-		<div class="container">
-			
-			<section class="main">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/grid.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		window.scrollTo(0, 1);
 
-				<div id="ri-grid" class="ri-grid ri-grid-size-3">
-					<img class="ri-loading-image" src="images/loading.gif"/>
-					<ul>
-						<li><a href="#"><img src="assets/100x100/01.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/02.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/03.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/04.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/05.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/06.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/07.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/08.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/09.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/10.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/11.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/12.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/13.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/14.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/15.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/16.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/17.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/18.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/19.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/20.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/21.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/05.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/06.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/07.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/08.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/09.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/10.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/11.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/12.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/13.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/14.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/15.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/16.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/17.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/18.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/19.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/20.jpg"/></a></li>
-						<li><a href="#"><img src="assets/100x100/21.jpg"/></a></li>
-					</ul>
-				</div>
-				
-				<header class="codrops-header-special">
-			
-					<h1>SHOOT, SCORE <br>& MUCH MORE!</br></h1>
-					<br>
-					<h2>Get 100's of addicting games for your phone for $9.99/mo.</h2>
-					
-					<nav class="button">
-						<img src="assets/pp-button-play.png" alt="Play Now">
-						
-					</nav>
-					<p class="codrops-info"><strong>Already Subscribed?</strong> <br> Terms & Conditions</br></p>
-					
-				</header>
-
-			</section>
-			
-        </div>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
-		<script type="text/javascript">	
-			$(function() {
-			
-				$( '#ri-grid' ).gridrotator( {
-					rows : 4,
-					columns : 8,
-					maxStep : 2,
-					interval : 2000,
-					w1024 : {
-						rows : 5,
-						columns : 6
-					},
-					w768 : {
-						rows : 5,
-						columns : 5
-					},
-					w480 : {
-						rows : 6,
-						columns : 4
-					},
-					w320 : {
-						rows : 7,
-						columns : 4
-					},
-					w240 : {
-						rows : 7,
-						columns : 3
-					},
-				} );
-			
-			});
-		</script>
-    </body>
+		$( '#ri-grid' ).gridrotator( {
+			rows : 4,
+			columns : 8,
+			maxStep : 2,
+			interval : 500,
+			w1024 : {
+				rows : 5,
+				columns : 6
+			},
+			w768 : {
+				rows : 5,
+				columns : 5
+			},
+			w480 : {
+				rows : 6,
+				columns : 4
+			},
+			w320 : {
+				rows : 7,
+				columns : 4
+			},
+			w240 : {
+				rows : 7,
+				columns : 3
+			},
+		} );
+	});
+</script>
+</body>
 </html>
